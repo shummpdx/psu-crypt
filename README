@@ -1,0 +1,13 @@
+Name: Sean Humm
+Email: hummsean@pdx.edu
+Class: CS585
+
+I am submitting my implementation of PSU-CRYPT. It takes in a file named 'plaintext.txt' and using 'key.txt' outputs
+and encrypted version named 'ciphertext.txt'. None of these files are provided. Unforutantely, encryption does not
+work 100% of the time, but the majority of a large block of text can still be recovered. My assumptions is that the
+bug has to do with the implementation of reading characters in from a file and converting them.
+
+How to build:
+g++ -Wall hummEncrypt.c
+
+hummEncrypt.c - contains source code
