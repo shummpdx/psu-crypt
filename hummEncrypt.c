@@ -54,7 +54,7 @@ int main(int argc, char *argv[]){
             importKey(key);
             generateSubkeys(key, subkeys); 
 
-                        while((amount = fread(plaintext, 1, sizeof(plaintext), input)) == 8){
+            while((amount = fread(plaintext, 1, sizeof(plaintext), input)) == 8){
                 plainToWords(plaintext, words);
                 encryption(words, key, subkeys, output, false);
             }
